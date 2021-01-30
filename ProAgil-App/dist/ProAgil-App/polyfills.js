@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\CURSO ASPNETCORE\DotNetCore\ProAgil-App\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\CursoAspNetCore\DotNetCore\ProAgil-App\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

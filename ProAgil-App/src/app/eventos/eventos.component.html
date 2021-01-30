@@ -1,6 +1,43 @@
-<div *ngFor="let evento of eventos">
+<!-- form>.form-group.mb-2>input.form-control.mr-2 -->
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control mr-2" placeholder="buscar">
+    <!-- btn.btn.btn-outline-success{buscar} -->
+    <button class="btn btn-outline-success">buscar</button>
+  </div>
+</form>
+<!-- table.table.table-striped>(thead.thead-dark>tr>th*7) -->
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Tema</th>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Qtd Pessoas</th>
+      <th>Lote</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <!-- tbody>tr>td*7 -->
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- <div *ngFor="let evento of eventos">
   Tema: {{evento.tema}}
   <br>
   Local: {{evento.local}}
   <hr>
-</div>
+</div> -->
