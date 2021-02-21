@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using ProAgil.API.Data;
-using ProAgil.API.Model;
+using ProAgil.Domain.Model;
+using ProAgil.Repository.Data;
 
 namespace ProAgil.API.Controllers
 {
@@ -15,9 +15,9 @@ namespace ProAgil.API.Controllers
     [Route("[controller]")]
     public class EventoController : ControllerBase
     {
-        private readonly DataContext _contexto;
+        private readonly ProAgilContext _contexto;
 
-        public EventoController(DataContext contexto)
+        public EventoController(ProAgilContext contexto)
         {
             _contexto = contexto;            
         }
@@ -40,7 +40,7 @@ namespace ProAgil.API.Controllers
         [HttpGet("Buscar/{id}")]
         public Evento Get(int id)
         {
-            return _contexto.Eventos.ToList().FirstOrDefault(e => e.EventoId == id);
+            return _contexto.Eventos.ToList().FirstOrDefault(e => e.Id == id);
         }
     }
 }
